@@ -1,0 +1,14 @@
+{
+  "name": "projfw2infoa",
+  "version": "1.0.0",
+  "description": "disciplina de frameworks 2 info A",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Turma Info A",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
