@@ -1,6 +1,7 @@
 var http = require('http');
 var server = http.createServer(function (req, res) {
     var url = req.url;
+    console.log(req.method)
     if (url == '/') {
         res.end(`Pagina Inicial ${url}`);
     }else if (url == '/cursos') {
