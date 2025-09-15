@@ -1,6 +1,7 @@
 const express = require('express')//get, put, delete,psot são os métodos HTTP
 const app = express()
-const port = 3000
+const port = process.env.port
+console.log(port)
 
 app.set('view engine','ejs')
 app.use(express.static('public'))
@@ -10,7 +11,10 @@ app.all('/cursos',(req,res,next)=>{
     next()
 })
 app.get('/', (req, res) => {
-  res.send('<html><body><h1>olá turma Info A</h1></body></html>')
+  res.render('index')
+})
+app.get('/script', (req, res) => {
+  res.render('script')
 })
 app.get('/cursos', (req, res) => {
   res.render('cursos')
