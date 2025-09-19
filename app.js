@@ -1,34 +1,13 @@
-const express = require('express')//get, put, delete,psot são os métodos HTTP
-const app = express()
-const port = process.env.port
-console.log(port)
+const app = require('./config/server')
+const port = require('./config/port')
 
-app.set('view engine','ejs')
-app.use(express.static('public'))
+const index = require('./route/index')(app)
+const script = require('./route/script')(app)
+const cursos = require('./route/cursos')(app)
+const pesquisa = require('./route/pesquisa')(app)
+const abobrinha = require('./route/abobrinha')(app)
+const esportes = require('./route/esportes')(app)
 
-app.all('/cursos',(req,res,next)=>{
-    console.log(req.method)
-    next()
-})
-app.get('/', (req, res) => {
-  res.render('index')
-})
-app.get('/script', (req, res) => {
-  res.render('script')
-})
-app.get('/cursos', (req, res) => {
-  res.render('cursos')
-})
-app.get('/abobrinha',(req,res)=>{
-  res.render('abobrinha')
-})
-app.get('/pesquisa',(req,res)=>{
-  res.render('pesquisa')
-})
-app.get('/esportes',(req,res)=>{
-  res.render('esportes')
-})
-//pesquisa esportes
 app.post('/', (req, res) => {
   res.send('Pagina Inicial POST')
 })
