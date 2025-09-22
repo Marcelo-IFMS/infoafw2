@@ -1,3 +1,5 @@
-module.exports = (app)=>{
-app.get('/abobrinha',(req,res)=>{
-  res.render('abobrinha')})}
+module.exports = (app) => {
+  app.get('/abobrinha', (req, res) => {
+    res.render('abobrinha')
+  })
+}

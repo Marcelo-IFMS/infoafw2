@@ -1,0 +1,18 @@
+//Caso baixe o projeto do repositório é necessário instalar os modulos/frameworks para funcionar
+npm i install
+//--------------------------------------------------------------
+// para iniciar o projeto do zero criando o package.json
+npm init
+//--------------------------------------------------------------
+// para instalar o express
+npm i express
+// para instalar o nodemon
+npm i nodemon
+//para instalar o ejs
+npm i ejs
+//set projeto
+set port=3000
+//para instalar o consign -- https://www.npmjs.com/package/consign
+npm i consign
+//Instalar o mongo db
+npm i mongodb
