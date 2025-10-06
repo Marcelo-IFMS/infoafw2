@@ -16,3 +16,9 @@ set port=3000
 npm i consign
 //Instalar o mongo db
 npm i mongodb
+
+// acessando variáveis de ambiente com node.
+https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs
+
+//Expressões regulares
+https://www.mongodb.com/pt-br/docs/manual/reference/operator/query/regex/

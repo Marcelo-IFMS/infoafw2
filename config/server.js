@@ -6,6 +6,7 @@ app.set('view engine','ejs')
 app.use(express.static('public'))
 consign()
   .include('route')
+  .then("./config/dbconnect.js")
   .into(app);
 
 module.exports = app;
