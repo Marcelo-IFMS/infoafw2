@@ -22,3 +22,5 @@ https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-
 
 //Expressões regulares
 https://www.mongodb.com/pt-br/docs/manual/reference/operator/query/regex/
+
+npm install --save body-parser
