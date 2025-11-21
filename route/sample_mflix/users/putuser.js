@@ -9,9 +9,7 @@ module.exports = (app) => {
                 .updateOne( {name: name},{ $set:{email:email,password:password}})
             res.status(200).json({status:"200",msg:'Atualizado com sucesso'})
         } catch (error) {
-             const resultado = app.DBClient.db('sample_mflix')
-                .collection('logerro')
-                .insertOne({ erro: error, page:req.url, var: req.body})
+             
             res.status(400).json({status:"400",msg:'erro'})
         }
     })
